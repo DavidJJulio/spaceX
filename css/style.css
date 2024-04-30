@@ -44,12 +44,28 @@ body{
     align-items: center;
     text-transform: uppercase;
 }
-
+.a__button {
+    width: 35%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--color--two) 1.5px solid;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.a__button:hover {
+    background-color: white;
+    color: var(--color--one);
+    border: none;
+    width: 38%;
+    height: 38%;
+}
 .main {
     /* background: orange; */
     height: 90vh;
     display: grid;
-    grid-template-columns: 1.5fr 6fr 2fr;
+    grid-template-columns: 2fr 6fr 2fr;
 }
 
 .description__item {
@@ -71,6 +87,12 @@ body{
 }
 .nav__information {
     height: 100%;
+    width: 100%;
+
+}
+.nav__description {
+    width: 100%;
+    padding-left: 5%;
 }
 .description__buttom a {
     text-decoration: none;
@@ -169,6 +191,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 20vh;
+    gap: 10%;
+    font-weight: bold;
+}
+.gray__words {
+    color: var(--color--two);
+    text-decoration: none;
+    font-size: 0.9em;
 }
 .information__container {
     /* background: blue; */
@@ -192,7 +221,7 @@ body{
 }
 
 .footer {
-    /* background: coral; */
+    background: rgba(255, 127, 80, 0.151);
     height: 10vh;
     display: grid;
     position: absolute;
