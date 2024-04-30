@@ -125,17 +125,19 @@ body{
     /* background: green; */
     position: relative;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 10vh);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 8vh);
     grid-template-areas: 
-    "section__item__1 section__item__1 section__item__2 section__item__2 section__item__3 section__item__3 section__item__4 section__item__4"
-    "section__item__1 section__item__1 section__item__2 section__item__2 section__item__3 section__item__3 section__item__4 section__item__4"
-    "section__item__5 section__item__6 section__item__7 section__item__7 section__item__7 section__item__7 section__item__8 section__item__9"
-    "section__item__5 section__item__6 section__item__7 section__item__7 section__item__7 section__item__7 section__item__8 section__item__9"
-    "section__item__10 section__item__10 section__item__7 section__item__7 section__item__7 section__item__7 . ."
-    "section__item__10 section__item__10 section__item__7 section__item__7 section__item__7 section__item__7 . ."
-    "section__item__10 section__item__10 section__item__7 section__item__7 section__item__7 section__item__7 . ."
-    "section__item__10 section__item__10 section__item__7 section__item__7 section__item__7 section__item__7 . .";
+    "section__item__1 section__item__1 section__item__1"
+    "section__item__1 section__item__1 section__item__1"
+    "section__item__1 section__item__1 section__item__1"
+    "section__item__2 section__item__3 section__item__4"
+    "section__item__2 section__item__3 section__item__4"
+    "section__item__2 section__item__3 section__item__4"
+    "section__item__5 section__item__3 ."
+    "section__item__5 section__item__3 ."
+    "section__item__5 section__item__3 ."
+    "section__item__5 section__item__3 ."
 }
 .section__item__1{
     background: red;
@@ -157,26 +159,7 @@ body{
     background: #502a43;
     grid-area: section__item__5;
 }
-.section__item__6{
-    background: #00fff7;
-    grid-area: section__item__6;
-}
-.section__item__7{
-    background: #1900ff;
-    grid-area: section__item__7;
-}
-.section__item__8{
-    background: #3f42a7;
-    grid-area: section__item__8;
-}
-.section__item__9{
-    background: #a99020;
-    grid-area: section__item__9;
-}
-.section__item__10{
-    background: #dd3b66;
-    grid-area: section__item__10;
-}
+
 .information__item {
     /* background: violet; */
     overflow-y: scroll;
@@ -221,7 +204,6 @@ body{
 }
 
 .footer {
-    background: rgba(255, 127, 80, 0.151);
     height: 10vh;
     display: grid;
     position: absolute;
@@ -244,6 +226,17 @@ body{
 .footer ul li a{
     text-decoration: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    width: 40px;
 }
 
+.footer ul li a img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer ul li a i {
+    font-size: 40px;
+}
