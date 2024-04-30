@@ -59,6 +59,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5%;
+    padding-left: 8%;
 }
 .description__buttom{
     /* background: #00ff84; */
@@ -67,6 +68,9 @@ body{
     align-items: center;
     height: 20vh;
     gap: 5px;
+}
+.nav__information {
+    height: 100%;
 }
 .description__buttom a {
     text-decoration: none;
@@ -154,19 +158,22 @@ body{
 .information__item {
     /* background: violet; */
     overflow-y: scroll;
-    height: 75vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .information__buttom{
     /* background: #00ff84; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 20vh;
 }
 .information__container {
     /* background: blue; */
     display: flex;
-    gap: 5px;
+    gap: 15px;
     align-content: center;
     margin: 0 var(--layout-description-container-x);
     margin-bottom: var(--layout-description-container-y);
