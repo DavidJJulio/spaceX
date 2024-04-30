@@ -9,6 +9,17 @@
 body{
     background: var(--color--one);
 }
+.description__container i{
+ font-size: 1.8em;
+}
+.description__container div small{
+    color: var(--color--two);
+}
+.description__container h3{
+    font-size: 1em;
+    padding-top: 5px;
+    color: var(--color--two);
+}
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
     height: 10px;
@@ -44,14 +55,37 @@ body{
 .description__item {
     /* background: blue; */
     overflow-y: scroll;
-    height: 75vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
 }
 .description__buttom{
     /* background: #00ff84; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 20vh;
+    gap: 5px;
+}
+.description__buttom a {
+    text-decoration: none;
+    border: var(--color--two) 1.5px solid;
+    border-radius: 7px;
+    width: 35%;
+    height: 35%;
+    font-size: 0.95em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.description__buttom a:hover{
+    background-color: var(--color--five);
+    border: none;
+    color: var(--color--one);
+    width: 38%;
+    height: 38%;
 }
 .description__container {
     /* background: violet; */
