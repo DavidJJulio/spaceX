@@ -1,12 +1,9 @@
-import {
-    getAllRockets,
-    getAllRocketsId,
-    getRocketMassTotal,
-    getRocketPayloadWeightsTotal,
-    getRocketHeightTotal,
-    getRocketDiameterTotal,
-    getRocketSecondStageCompositeFairingDiameterTotal,
-    getRocketSecondStageCompositeFairingHeightTotal,
-} from "./modules/rockets.js"
+import { getAllRocketEngineTotal } from "./modules/rockets.js";
+import { 
+    paginationRockets
+} from "./modulesComponents/pagination.js";
 
-console.log(await getRocketSecondStageCompositeFairingHeightTotal())
+
+let paginacion = document.querySelector("#paginacion");
+paginacion.innerHTML = ""
+paginacion.append(await paginationRockets())
