@@ -1,7 +1,7 @@
 export const imageRockets = async(flickr_images) =>{
     let section__image = document.querySelector("#section__image")
     let divs = [];
-    flickr__images.forEach(val =>{
+    flickr_images.forEach(val =>{
         let div = document.createElement("div");
         div.classList.add("carousel__item");
         let img = document.createElement("img");

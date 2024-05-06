@@ -29,7 +29,7 @@ import {
     progressDiameterRocket,
     progressSecondStageDiameterRocket,
     progressSecondStageHeightRocket,
-} from "../modulesComponents/progressBar.js";
+} from "../moduleComponents/progressBar.js";
 
 
 
@@ -94,7 +94,7 @@ export const paginationRockets = async() =>{
         a.addEventListener("click", getRocketsId)
         div.appendChild(a);
     });
-    
+
     let [a1,a2,a3,a4] = div.children
     a3.click();
     // <div class="buttom__paginacion">

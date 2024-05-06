@@ -8,19 +8,19 @@ import {
 } from "../modules/rockets.js";
 
 export const progressRocketWeight = async(Rockets) =>{
-    let {kg} = await fetch(getRocketMassTotal());
+    let {kg} = await getRocketMassTotal();
     let conterDiv = [];
     [Rockets].forEach(val =>{
         let divInformationContainer = document.createElement("div");
         divInformationContainer.classList.add("information__container")
         let divFirst = document.createElement("div");
-        let labelFirst = document.createElement("label");
-        labelFirst.textContent = "Rocket Weight: "
+        let labelFist = document.createElement("label");
+        labelFist.textContent = "Rocket Weight: "
 
-        let progressFirst = document.createElement("progress");
-        progressFirst.max = kg
-        progressFirst.value = `${val.mass.kg}`;
-        progressFirst.textContent = `${val.mass.kg}`;
+        let ProgressFist = document.createElement("progress");
+        ProgressFist.max = kg
+        ProgressFist.value = `${val.mass.kg}`;
+        ProgressFist.textContent = `${val.mass.kg}%`;
 
         let divLast = document.createElement("div");
         let spanLast = document.createElement("span");
@@ -28,8 +28,8 @@ export const progressRocketWeight = async(Rockets) =>{
         let numLb = new Intl.NumberFormat('cop').format(val.mass.lb);
         spanLast.innerHTML = `${numKg} kg <br> ${numLb} lb`;
 
-        divFirst.append(labelFirst)
-        divFirst.append(progressFirst)
+        divFirst.append(labelFist)
+        divFirst.append(ProgressFist)
         divLast.append(spanLast)
         divInformationContainer.append(divFirst)
         divInformationContainer.append(divLast)

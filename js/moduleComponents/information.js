@@ -3,14 +3,14 @@ export const informationRockets = async(country, description) =>{
     div.classList.add("description__container");
     let divFirst = document.createElement("div");
     let img = document.createElement("img");
-    imgFirst.setAttribute("src", "storage/img/icons/mech.svg")
+    img.setAttribute("src", "storage/img/icons/mech.svg")
     divFirst.append(img);
 
     let divLast = document.createElement("div");
     let h3 = document.createElement("h3");
-    let small = document.createElement("small");
-    h3.textContent = "title"
-    small.textContent = "lorem..."
+    h3.textContent = country
+    let small = document.createElement('small');
+    small.textContent = description
     divLast.append(h3, small)
     div.append(divFirst, divLast)
 
