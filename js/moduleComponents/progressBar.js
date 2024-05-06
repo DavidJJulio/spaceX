@@ -203,5 +203,3 @@ export const progressSecondStageHeightRocket = async(Rockets)=>{
     let information__2 = document.querySelector("#information__2");
     information__2.append(...conterDiv)
 }
-
-
